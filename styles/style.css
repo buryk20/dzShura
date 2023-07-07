@@ -252,3 +252,65 @@ button {
     color: #909090;
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif ;
 }
+
+.hover {
+    position: relative;
+
+
+}
+
+.hover li {
+    padding-left: 16px;
+    cursor: pointer;
+}
+
+.hover:hover .hover-active {
+    height: 200px;
+    padding: 16px;
+    visibility: inherit;
+    transition: height 0.3s;
+}
+
+.hover:hover .hover-2 {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.hover-active {
+    height: 0;
+    padding: 0;
+    visibility: hidden;
+
+    position: absolute;
+
+    /* overflow: hidden; */
+    text-align: left;
+
+    background-color: #ffffff;
+    transition: 0.3s;
+}
+
+.hover-active > ol {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.hover-active-2 {
+    display: none;
+    position: absolute;
+    left: 58px;
+    top: 0;
+    background-color: #d94748;
+    transition: 0.3s;
+}
+
+.hover-2 {
+    position: relative;
+    opacity: 0;
+}
+
+.hover-2:hover .hover-active-2 {
+    display: block;
+    transition: 0.3s;
+}
